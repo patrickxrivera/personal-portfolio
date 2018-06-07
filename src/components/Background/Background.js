@@ -5,9 +5,16 @@ import * as Style from './BackgroundStyles';
 
 const Background = ({}) => (
   <BodyBackgroundColor backgroundColor="#1544c0">
-    <Style.Wrapper>
-      <Style.Heading>Background.</Style.Heading>
-    </Style.Wrapper>
+    <Style.HeadingWrapper>
+      <Style.Heading>Mind of an Engineer. Heart of a Designer.</Style.Heading>
+      <Style.SubHeading>
+        Passionate about building products that solve problems in education, healthcare, and
+        productivity.
+      </Style.SubHeading>
+      <Style.ChevronIcon>
+        <a href="#background" />
+      </Style.ChevronIcon>
+    </Style.HeadingWrapper>
   </BodyBackgroundColor>
 );
 

@@ -1,7 +1,7 @@
 import React from 'react';
 import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
 
-import Background from '../Background/Background';
+import Home from '../Home/Home';
 import Nav from '../Nav/Nav';
 import { Wrapper } from './AppStyles';
 
@@ -10,7 +10,7 @@ const App = ({}) => (
     <Wrapper>
       <Nav />
       <Switch>
-        <Route exact path="/" component={Background} />
+        <Route exact path="/" component={Home} />
       </Switch>
     </Wrapper>
   </Router>

@@ -1,34 +1,34 @@
 import styled from 'styled-components';
 
+import { NavLink } from 'react-router-dom';
+
 export const Wrapper = styled.div`
   display: flex;
   align-items: center;
   margin-top: 2rem;
+  justify-content: space-between;
+  width: 92%;
+  margin: 0 auto;
+  color: rgb(140, 67, 255);
+  padding: 0 1.5rem 1rem;
+  border-bottom: 1px solid rgb(140, 67, 255, 0.3);
 `;
 
-export const LogoWrapper = styled.div`
-  width: 33%;
+export const NameWrapper = styled.div``;
+
+export const Name = styled.div`
+  font-size: 1.4rem;
+  font-weight: 500;
 `;
 
-export const Logo = styled.div`
-  width: 34px;
-  height: 34px;
-  border-radius: 50%;
-  border: 2px solid #fff;
-`;
-
-export const LogoText = styled.div`
+export const NameText = styled.div`
   display: flex;
   align-items: center;
   justify-content: center;
   text-align: center;
-  letter-spacing: 0.3px;
-  margin-top: 5px;
 `;
 
-export const TabsWrapper = styled.div`
-  width: 33%;
-`;
+export const TabsWrapper = styled.div``;
 
 export const Tabs = styled.div`
   display: flex;
@@ -36,21 +36,27 @@ export const Tabs = styled.div`
   align-items: center;
   text-transform: uppercase;
   letter-spacing: 0.6px;
-  font-size: 13px;
-  padding: 0 3rem;
+  font-size: 14px;
+  font-weight: 500;
+  color: rgb(140, 67, 255, 0.7);
 `;
 
 export const TabText = styled.div`
-  height: 22px;
+  &:hover {
+    color: rgb(140, 67, 255);
+    transition: 80ms ease-in forwards;
+  }
 `;
 
-export const Link = styled.a``;
+export const tabText = {
+  paddingRight: '3rem'
+};
 
-export const Contact = styled.div`
-  flex: 1;
-  font-size: 13px;
-  text-transform: uppercase;
-  letter-spacing: 0.6px;
-  text-align: right;
-  margin-bottom: 7px;
+export const Link = styled(NavLink)`
+  text-decoration: none;
+  color: inherit;
 `;
+
+export const active = {
+  color: 'rgb(140, 67, 255)'
+};

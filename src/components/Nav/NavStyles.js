@@ -11,7 +11,7 @@ export const Wrapper = styled.div`
   margin: 0 auto;
   color: rgb(140, 67, 255);
   padding: 0 1.5rem 1rem;
-  border-bottom: 1px solid rgb(140, 67, 255, 0.3);
+  border-bottom: 1px solid rgb(222, 224, 229);
 `;
 
 export const NameWrapper = styled.div``;
@@ -59,4 +59,9 @@ export const Link = styled(NavLink)`
 
 export const active = {
   color: 'rgb(140, 67, 255)'
+};
+
+export const name = {
+  fontSize: '1.4rem',
+  fontWeight: '500'
 };

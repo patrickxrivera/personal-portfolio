@@ -1,5 +1,7 @@
 import styled, { injectGlobal } from 'styled-components';
 
+import media from '../../utils/mediaTemplate';
+
 export const AppStyles = injectGlobal`
   html, body {
     margin: 0;
@@ -20,6 +22,8 @@ export const InnerWrapper = styled.div`
   background-color: rgb(233, 235, 238);
   height: 100vh;
   width: 100%;
+
+  ${media.tablet`height: 100%;`};
 `;
 
 export const Container = styled.div`

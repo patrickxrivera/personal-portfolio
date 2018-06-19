@@ -4,9 +4,11 @@ import * as Style from './NavStyles';
 
 const Nav = () => (
   <Style.Wrapper>
-    <Style.Link style={Style.name} to="/">
-      Patrick Rivera
-    </Style.Link>
+    <Style.Name>
+      <Style.Link style={Style.name} to="/">
+        Patrick Rivera
+      </Style.Link>
+    </Style.Name>
     <Style.Tabs>
       <Style.TabText style={Style.tabText}>
         <Style.Link to="/projects" activeStyle={Style.active}>
@@ -19,9 +21,9 @@ const Nav = () => (
         </Style.Link>
       </Style.TabText>
       <Style.TabText>
-        <Style.Link to="/contact" activeStyle={Style.active}>
+        <Style.LinkTag style={{ textDecoration: 'none' }} href="mailto:patrick.x.rivera@gmail.com">
           Contact
-        </Style.Link>
+        </Style.LinkTag>
       </Style.TabText>
     </Style.Tabs>
   </Style.Wrapper>

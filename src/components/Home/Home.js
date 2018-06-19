@@ -20,7 +20,7 @@ const Home = () => (
 );
 
 const renderIcon = ({ link, Icon }) => (
-  <Style.Icon href={link} target="_blank">
+  <Style.Icon href={link} target="_blank" key={link}>
     <Icon style={Style.icon} />
   </Style.Icon>
 );

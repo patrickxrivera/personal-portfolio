@@ -1,6 +1,7 @@
 import styled from 'styled-components';
 
 import { fadeInUp } from '../../utils/animations';
+import media from '../../utils/mediaTemplate';
 
 export const Wrapper = styled.div`
   padding-top: 3rem;
@@ -20,6 +21,8 @@ export const InnerWrapper = styled.div`
   border-radius: 10px;
   box-shadow: 0 15px 35px rgba(50, 50, 93, 0.1), 0 5px 15px rgba(0, 0, 0, 0.07);
   padding: 2rem;
+
+  ${media.phone`margin: 0 10px 2rem;`};
 `;
 
 export const Headline = styled.div`

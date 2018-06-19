@@ -1,6 +1,7 @@
 import styled from 'styled-components';
 
 import { NavLink } from 'react-router-dom';
+import media from '../../utils/mediaTemplate';
 
 export const Wrapper = styled.div`
   display: flex;
@@ -12,6 +13,8 @@ export const Wrapper = styled.div`
   color: rgb(140, 67, 255);
   padding: 0 1.5rem 1rem;
   border-bottom: 1px solid rgb(222, 224, 229);
+
+  ${media.phone`flex-direction: column;`};
 `;
 
 export const NameWrapper = styled.div``;
@@ -19,6 +22,8 @@ export const NameWrapper = styled.div``;
 export const Name = styled.div`
   font-size: 1.4rem;
   font-weight: 500;
+
+  ${media.phone`margin-bottom: 1rem;`};
 `;
 
 export const NameText = styled.div`
@@ -42,6 +47,16 @@ export const Tabs = styled.div`
 `;
 
 export const TabText = styled.div`
+  &:hover {
+    color: rgb(140, 67, 255);
+    transition: 80ms ease-in forwards;
+  }
+`;
+
+export const LinkTag = styled.a`
+  text-decoration: none;
+  color: rgb(140, 67, 255, 0.7);
+
   &:hover {
     color: rgb(140, 67, 255);
     transition: 80ms ease-in forwards;

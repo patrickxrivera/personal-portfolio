@@ -1,11 +1,14 @@
 import styled from 'styled-components';
 
 import { fadeInUp } from '../../utils/animations';
+import media from '../../utils/mediaTemplate';
 
 export const Wrapper = styled.div`
   padding-top: 2rem;
   opacity: 0;
   animation: ${fadeInUp} 400ms 250ms ease-out forwards;
+
+  ${media.tablet`margin-bottom: 3rem;`};
 `;
 
 export const Grid = styled.div`
@@ -15,6 +18,10 @@ export const Grid = styled.div`
   grid-auto-rows: minmax(100px, 300px);
   justify-content: center;
   margin: 0 6rem;
+
+  ${media.tablet`grid-template-columns: repeat(2, 1fr);`};
+
+  ${media.phone`grid-template-columns: 300px;`};
 `;
 
 export const ProjectWrapper = styled.div`
@@ -34,12 +41,16 @@ export const TitleArea = styled.div`
   align-items: center;
   margin-left: 10px;
   margin-top: 1rem;
+
+  ${media.phone`text-align: center;`};
 `;
 
 export const TitleText = styled.span`
   font-weight: 500;
   font-size: 1.5rem;
   margin-left: 6px;
+
+  ${media.phone`font-size: 1.25rem;`};
 `;
 
 export const Description = styled.span`

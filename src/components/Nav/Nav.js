@@ -21,7 +21,9 @@ const Nav = () => (
         </Style.Link>
       </Style.TabText>
       <Style.TabText>
-        <Style.LinkTag style={{ textDecoration: 'none' }} href="mailto:patrick.x.rivera@gmail.com">
+        <Style.LinkTag
+          style={{ textDecoration: 'none', color: 'inherit' }}
+          href="mailto:patrick.x.rivera@gmail.com">
           Contact
         </Style.LinkTag>
       </Style.TabText>

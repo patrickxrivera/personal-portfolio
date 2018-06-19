@@ -26,14 +26,17 @@ export const Column = styled.div`
   border-radius: 10px;
   box-shadow: 0 15px 35px rgba(50, 50, 93, 0.1), 0 5px 15px rgba(0, 0, 0, 0.07);
   padding: 2rem;
-  min-width: 200px;
   max-width: 300px;
   height: 400px;
   display: flex;
   flex-direction: column;
   align-items: center;
+  margin: 0 2rem;
 
   ${media.tablet`margin-bottom: 2rem;`};
+
+  ${media.phone`min-width: 200px;`};
+  ${media.phone`padding: 1rem;`};
 `;
 
 export const Title = styled.div`

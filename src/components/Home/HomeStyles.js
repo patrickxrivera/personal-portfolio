@@ -24,6 +24,7 @@ export const InnerWrapper = styled.div`
 
   ${media.phone`min-width: 200px;`};
   ${media.phone`margin: 0 10px 2.25rem;`};
+  ${media.phone`padding: 1rem;`};
 `;
 
 export const Headline = styled.div`

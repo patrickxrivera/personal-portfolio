@@ -21,7 +21,7 @@ export const Grid = styled.div`
 
   ${media.tablet`grid-template-columns: repeat(2, 1fr);`};
 
-  ${media.phone`grid-template-columns: 300px;`};
+  ${media.phone`grid-template-columns: 200px;`};
 `;
 
 export const ProjectWrapper = styled.div`

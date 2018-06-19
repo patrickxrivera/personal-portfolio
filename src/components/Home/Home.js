@@ -10,7 +10,7 @@ const Home = () => (
       <Style.Description>
         {`After internships in Strategy Consulting and Product Management at a Series-A startup, I
         realized what I enjoyed most was building products that solve important problems. As a
-        result, I've built web apps, bots, and chrome extensions to solve daily problems. I enjoy obsessing over
+        result, I've built web apps, bots, and chrome extensions. I enjoy obsessing over
         user experience, maintainable code, and functional programming.`}
       </Style.Description>
       <Style.Image src={require('./profile-pic.jpg')} />

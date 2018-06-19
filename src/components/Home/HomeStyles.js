@@ -52,6 +52,9 @@ export const Image = styled.img`
   height: 250px;
   border-radius: 50%;
   margin: 2rem auto;
+
+  ${media.phone`width: 200px;`};
+  ${media.phone`height: 200px;`};
 `;
 
 export const Icon = styled.a`

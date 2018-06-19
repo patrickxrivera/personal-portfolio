@@ -36,6 +36,8 @@ export const ProjectWrapper = styled.div`
   justify-content: space-between;
 
   ${media.phone`padding: 2rem 1rem;`};
+  ${media.phone`width: 240px;`};
+  ${media.phone`margin: 0 auto;`};
 `;
 
 export const TitleArea = styled.div`

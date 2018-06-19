@@ -36,7 +36,7 @@ export default [
     website: ''
   },
   {
-    title: 'Data Structures using TDD',
+    title: 'Data Structures TDD',
     image: '',
     description:
       'Common data structure implementations such as hash maps, trees, graphs, linked lists, and more using test-driven development.',

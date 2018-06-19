@@ -15,6 +15,7 @@ export const Wrapper = styled.div`
   border-bottom: 1px solid rgb(222, 224, 229);
 
   ${media.phone`flex-direction: column;`};
+  ${media.phone`width: 100vw;`};
 `;
 
 export const NameWrapper = styled.div``;
@@ -24,6 +25,7 @@ export const Name = styled.div`
   font-weight: 500;
 
   ${media.phone`margin-bottom: 1rem;`};
+  ${media.phone`margin-left: -2rem;`};
 `;
 
 export const NameText = styled.div`
@@ -43,7 +45,9 @@ export const Tabs = styled.div`
   letter-spacing: 0.6px;
   font-size: 14px;
   font-weight: 500;
-  color: rgb(140, 67, 255, 0.7);
+  color: rgb(140, 67, 255, 0.6);
+
+  ${media.phone`margin-left: -3rem;`};
 `;
 
 export const TabText = styled.div`

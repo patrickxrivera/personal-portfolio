@@ -3,6 +3,7 @@ import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
 
 import Home from '../Home/Home';
 import Nav from '../Nav/Nav';
+import Skills from '../Skills/Skills';
 import { Wrapper, InnerWrapper, Container } from './AppStyles';
 
 const App = ({}) => (
@@ -13,6 +14,7 @@ const App = ({}) => (
         <Container>
           <Switch>
             <Route exact path="/" component={Home} />
+            <Route exact path="/skills" component={Skills} />
           </Switch>
         </Container>
       </InnerWrapper>

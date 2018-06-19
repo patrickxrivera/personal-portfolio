@@ -17,7 +17,7 @@ export const Wrapper = styled.div`
 `;
 
 export const InnerWrapper = styled.div`
-  background-color: rgb(140, 67, 255, 0.04);
+  background-color: rgb(233, 235, 238);
   height: 100vh;
   width: 100%;
 `;

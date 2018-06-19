@@ -27,7 +27,7 @@ export const Column = styled.div`
   box-shadow: 0 15px 35px rgba(50, 50, 93, 0.1), 0 5px 15px rgba(0, 0, 0, 0.07);
   padding: 2rem;
   min-width: 200px;
-  width: 300px;
+  max-width: 300px;
   height: 400px;
   display: flex;
   flex-direction: column;

@@ -22,18 +22,23 @@ export const InnerWrapper = styled.div`
   box-shadow: 0 15px 35px rgba(50, 50, 93, 0.1), 0 5px 15px rgba(0, 0, 0, 0.07);
   padding: 2rem;
 
-  ${media.phone`margin: 0 10px 2rem;`};
+  ${media.phone`min-width: 200px;`};
+  ${media.phone`margin: 0 10px 2.25rem;`};
 `;
 
 export const Headline = styled.div`
   font-size: 2.5rem;
   margin-bottom: 2rem;
+
+  ${media.phone`font-size: 1.5rem;`};
 `;
 
 export const Description = styled.div`
   font-size: 1.25rem;
   font-weight: 300;
   letter-spacing: 0.2px;
+
+  ${media.phone`font-size: 1rem;`};
 `;
 
 export const SocialWrapper = styled.div`

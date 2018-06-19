@@ -34,6 +34,8 @@ export const ProjectWrapper = styled.div`
   align-items: center;
   height: 250px;
   justify-content: space-between;
+
+  ${media.phone`padding: 2rem 1rem;`};
 `;
 
 export const TitleArea = styled.div`
@@ -43,6 +45,9 @@ export const TitleArea = styled.div`
   margin-top: 1rem;
 
   ${media.phone`text-align: center;`};
+  ${media.phone`width: 100%;`};
+  ${media.phone`justify-content: center;`};
+  ${media.phone`margin-left: 0;`};
 `;
 
 export const TitleText = styled.span`
@@ -50,20 +55,23 @@ export const TitleText = styled.span`
   font-size: 1.5rem;
   margin-left: 6px;
 
-  ${media.phone`font-size: 1.25rem;`};
+  ${media.phone`font-size: 1.1rem;`};
 `;
 
 export const Description = styled.span`
   text-align: center;
   font-weight: 300;
   margin: 2rem 0 1rem;
+
+  ${media.phone`font-size: 14px;`};
 `;
 
 export const Stack = styled.span`
   text-align: center;
   font-weight: 300;
-
   margin-bottom: 1.5rem;
+
+  ${media.phone`font-size: 14px;`};
 `;
 
 export const Links = styled.div`

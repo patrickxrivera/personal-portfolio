@@ -8,10 +8,10 @@ const Home = () => (
     <Style.InnerWrapper>
       <Style.Headline>Full-Stack Engineer</Style.Headline>
       <Style.Description>
-        After internships in Strategy Consulting and Product Management at a Series-A startup, I
+        {`After internships in Strategy Consulting and Product Management at a Series-A startup, I
         realized what I enjoyed most was building products that solve important problems. As a
-        result, I've built web apps, bots, and chrome extensions for fun. I enjoy obsessing over
-        user experience, maintainable code, and functional programming.
+        result, I've built web apps, bots, and chrome extensions to solve daily problems. I enjoy obsessing over
+        user experience, maintainable code, and functional programming.`}
       </Style.Description>
       <Style.Image src={require('./profile-pic.jpg')} />
       <Style.SocialWrapper>{icons.map(renderIcon)}</Style.SocialWrapper>

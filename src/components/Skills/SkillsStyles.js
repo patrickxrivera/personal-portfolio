@@ -26,7 +26,7 @@ export const Column = styled.div`
   border-radius: 10px;
   box-shadow: 0 15px 35px rgba(50, 50, 93, 0.1), 0 5px 15px rgba(0, 0, 0, 0.07);
   padding: 2rem;
-  max-width: 300px;
+  width: 300px;
   height: 400px;
   display: flex;
   flex-direction: column;
@@ -35,8 +35,7 @@ export const Column = styled.div`
 
   ${media.tablet`margin-bottom: 2rem;`};
 
-  ${media.phone`min-width: 200px;`};
-  ${media.phone`padding: 1rem;`};
+  ${media.phone`padding: 2rem 1rem;`};
 `;
 
 export const Title = styled.div`

@@ -6,6 +6,7 @@ export const AppStyles = injectGlobal`
   html, body {
     margin: 0;
     padding: 0;
+    overflow-x: hidden;
   }
 `;
 
@@ -21,7 +22,7 @@ export const Wrapper = styled.div`
 export const InnerWrapper = styled.div`
   background-color: rgb(233, 235, 238);
   height: 100vh;
-  width: 100%;
+  width: 100vw;
 
   ${media.tablet`height: 100%;`};
 `;

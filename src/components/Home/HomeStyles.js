@@ -20,11 +20,11 @@ export const InnerWrapper = styled.div`
   background-color: #fff;
   border-radius: 10px;
   box-shadow: 0 15px 35px rgba(50, 50, 93, 0.1), 0 5px 15px rgba(0, 0, 0, 0.07);
-  padding: 2rem;
+  padding: 2.5rem;
 
   ${media.phone`min-width: 200px;`};
-  ${media.phone`margin: 0 10px 2.25rem;`};
-  ${media.phone`padding: 1rem;`};
+  ${media.phone`margin: 0 1.5rem 2.25rem;`};
+  ${media.phone`padding: 2rem 1.2rem;`};
 `;
 
 export const Headline = styled.div`
@@ -35,7 +35,7 @@ export const Headline = styled.div`
 `;
 
 export const Description = styled.div`
-  font-size: 1.25rem;
+  font-size: 1.2rem;
   font-weight: 300;
   letter-spacing: 0.2px;
 

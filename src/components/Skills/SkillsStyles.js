@@ -4,8 +4,9 @@ import { fadeInUp } from '../../utils/animations';
 import media from '../../utils/mediaTemplate';
 
 export const Wrapper = styled.div`
-  padding-top: 5rem;
+  padding-top: 8%;
   opacity: 0;
+
   animation: ${fadeInUp} 400ms 250ms ease-out forwards;
 
   ${media.tablet`padding-top: 2rem;`};

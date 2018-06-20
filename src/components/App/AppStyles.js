@@ -21,7 +21,7 @@ export const Wrapper = styled.div`
 
 export const InnerWrapper = styled.div`
   background-color: rgb(233, 235, 238);
-  min-height: 700px;
+  min-height: 100vh;
   width: 100vw;
 
   ${media.tablet`height: 100%;`};

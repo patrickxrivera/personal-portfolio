@@ -11,17 +11,23 @@ export const Wrapper = styled.div`
   ${media.tablet`margin-bottom: 3rem;`};
 `;
 
+export const ContentWrapper = styled.div`
+  display: flex;
+  justify-content: ${({ hasGif }) => (hasGif === null ? 'center' : 'space-between')};
+  width: 1100px;
+  margin: 0 auto 3rem;
+
+  ${media.phone`width: 100vw;`};
+  ${media.phone`flex-direction: column;`};
+`;
+
 export const Grid = styled.div`
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  grid-gap: 30px;
-  grid-auto-rows: minmax(100px, 300px);
+  display: flex;
+  flex-direction: column;
   justify-content: center;
   margin: 0 6rem;
 
-  ${media.tablet`grid-template-columns: repeat(2, 1fr);`};
-
-  ${media.phone`grid-template-columns: 300px;`};
+  ${media.phone`margin: 0 auto;`};
 `;
 
 export const ProjectWrapper = styled.div`
@@ -34,10 +40,11 @@ export const ProjectWrapper = styled.div`
   align-items: center;
   height: 250px;
   justify-content: space-between;
+  width: 400px;
 
   ${media.phone`padding: 2rem 1rem;`};
   ${media.phone`width: 240px;`};
-  ${media.phone`margin: 0 auto;`};
+  ${media.phone`margin: 0 auto 1rem;`};
 `;
 
 export const TitleArea = styled.div`
@@ -74,6 +81,11 @@ export const Stack = styled.span`
   margin-bottom: 1.5rem;
 
   ${media.phone`font-size: 14px;`};
+`;
+
+export const Image = styled.img`
+  width: 50px;
+  height: 35px;
 `;
 
 export const Links = styled.div`
